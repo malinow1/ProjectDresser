@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Company:</b>
+  <%= @article.company_id %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @article.description %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%= @article.size %>
+</p>
+
+<p>
+  <b>Color:</b>
+  <%= @article.color %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%= @article.gender %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @article.url %>
+</p>
+
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>

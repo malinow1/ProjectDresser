@@ -1,0 +1,26 @@
+<div data-role="header">
+  <h1>Log In</h1>
+</div>
+<div data-role="content">
+  <form action='verify' method='post'>
+  <div class='field'>
+    <label for="name">Email:</label>
+    <input type="text" name="name" id="name" value=""/>
+  </div>
+  <div class='field'>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" value="">
+  </div> 
+    <input type='submit' value='Submit' id='loginsubmit'>
+  </form>
+  <form action='users/new' method='post'>
+    <div style="float:left; width=50%">
+      <input type='submit' id='create' value='Create Account'>
+    </div>
+  </form>
+  <form action='forgotpass' method='post'>
+    <div style="float:right; width=50%">
+      <input type='submit' id='forgot' value='Forgot Password'>
+    </div>
+  </form>
+</div>

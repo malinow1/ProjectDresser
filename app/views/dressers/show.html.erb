@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @dresser.user_id %>
+</p>
+
+<p>
+  <b>Article:</b>
+  <%= @dresser.article_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_dresser_path(@dresser) %> |
+<%= link_to 'Back', dressers_path %>

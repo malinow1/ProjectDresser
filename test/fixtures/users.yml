@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  username: 'nowobil1'
+  first_name: 'John'
+  last_name: 'Nowobilski'
+  phone: '6301234567'
+  address: '1234'
+  email: 'nowobil1@illinois.edu'
+  password: 'password1'
+
+two:
+  username: 'blong5'
+  first_name: 'Sean'
+  last_name: 'Blong'
+  phone: '1234567890'
+  address: '234534'
+  email: 'blong5@illinois.edu'
+  password: 'password2'

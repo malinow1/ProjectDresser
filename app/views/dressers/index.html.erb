@@ -1,0 +1,25 @@
+<h1>Listing dressers</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Article</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @dressers.each do |dresser| %>
+  <tr>
+    <td><%= dresser.user_id %></td>
+    <td><%= dresser.article_id %></td>
+    <td><%= link_to 'Show', dresser %></td>
+    <td><%= link_to 'Edit', edit_dresser_path(dresser) %></td>
+    <td><%= link_to 'Destroy', dresser, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Dresser', new_dresser_path %>

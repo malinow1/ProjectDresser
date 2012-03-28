@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %title ProjectDresser
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    %div{data:{role: 'page'}}
+      %div{ data: { role: 'header'}}
+        %h1 Project Dresser!
+      %div{ data: { role: 'body'}}
+        = yield
+      %div{ data: {position: 'fixed', role: 'footer'}}
+        %h1= link_to 'Home', homes_url
